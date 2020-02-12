@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Cliente")
 @Builder
-@Data
+
 @NoArgsConstructor
 @AllArgsConstructor
 
