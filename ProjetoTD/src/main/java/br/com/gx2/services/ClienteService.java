@@ -11,17 +11,6 @@ import br.com.gx2.entities.Login;
 @Service
 public class ClienteService {
 
-	//pegar login da pagina/front
-	@RequestMapping (value = "/login", method = RequestMethod.GET)
-	public String getLogin() {
-		
-		return "login";		
-	}
-	
-	@RequestMapping(value ="/login", method=RequestMethod.POST)
-	public String login(@ModelAttribute(name="loginForm") Login login, Model model) {
-		
-		String username = login.
-	}
+
 
 }
