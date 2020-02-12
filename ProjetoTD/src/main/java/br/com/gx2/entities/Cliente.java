@@ -7,7 +7,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Entity
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Cliente")
 public class Cliente {
 
@@ -19,7 +28,12 @@ public class Cliente {
 	@Column(name = "nomeCliente")
 	private String nomeCliente;
 	
-	@Column ()
+	@Column (name = "emailCliente")
+	private String emailCliente;
+	
+	@Column (name = "senhaCliente")
+	private String senhaCliente;
+	
 	
 	
 }
