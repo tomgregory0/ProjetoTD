@@ -1,4 +1,4 @@
-package br.com.gx2.entity;
+package br.com.gx2.entities;
 @Entity
 public class Cliente {
 
