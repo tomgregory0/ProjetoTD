@@ -7,14 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "Cliente")
-@Builder
-
-@NoArgsConstructor
-@AllArgsConstructor
-
+@ 
 public class Cliente {
 
 	@Id
@@ -24,13 +19,11 @@ public class Cliente {
 
 	@Column(name = "nomeCliente")
 	private String nomeCliente;
-	
-	@Column (name = "emailCliente")
+
+	@Column(name = "emailCliente")
 	private String emailCliente;
-	
-	@Column (name = "senhaCliente")
+
+	@Column(name = "senhaCliente")
 	private String senhaCliente;
-	
-	
-	
+
 }
