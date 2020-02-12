@@ -1,4 +1,4 @@
-package br.com.gx2.entity;
+package br.com.gx2.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,17 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name = "Cliente")
 @Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Cliente")
+
 public class Cliente {
 
 	@Id
